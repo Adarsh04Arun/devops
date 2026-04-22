@@ -1,0 +1,90 @@
+
+$ git init
+Initialized empty Git repository in C:/Coding/DEVOPS_PRAC/2nd_exp/.git/
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main)
+$ notepad f1.txt
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main)
+$ notepad f1.txt
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main)
+$ git add .
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main)
+$ git commit -m "This is the first commit from main branch"
+[main (root-commit) 4881310] This is the first commit from main branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f1.txt
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main)
+$ git checkout -b feature
+Switched to a new branch 'feature'
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (feature)
+$ notepad f1.txt
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (feature)
+$ git add .
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (feature)
+$ git commit -m "This is the commit from feature branch"
+[feature 4fe48b5] This is the commit from feature branch
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (feature)
+$ git checkout main
+Switched to branch 'main'
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main)
+$ notepad f1.txt
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main)
+$ git add /
+fatal: C:/Program Files/Git/: 'C:/Program Files/Git/' is outside repository at 'C:/Coding/DEVOPS_PRAC/2nd_exp'
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main)
+$ git add .
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main)
+$ git commit -m "This is the mod commit from the main branch"
+[main 2a3ca6c] This is the mod commit from the main branch
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main)
+$ git merge feature
+Auto-merging f1.txt
+CONFLICT (content): Merge conflict in f1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main|MERGING)
+$ notepad f1.txt
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main|MERGING)
+$ git commit
+U       f1.txt
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main|MERGING)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main|MERGING)
+$ git add .
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main|MERGING)
+$ git commit
+[main 290bbab] Merge branch 'feature'
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Adarsh Arun@LAPTOP-0M8KHQUG MINGW64 /c/Coding/DEVOPS_PRAC/2nd_exp (main)
+$
