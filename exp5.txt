@@ -1,0 +1,17 @@
+git tag -a v1.0 -m "Version 1.0 release"
+
+# Step 10: List all tags
+git tag
+
+# Step 11: View details of the tag
+git show v1.0
+
+# Step 12: create repository and then Add GitHub remote repository
+git remote add origin https://github.com/USERNAME/DevOps_Exp5.git
+
+# Step 13: Push commits to GitHub
+git push origin master
+
+# Step 14: Push the tag to GitHub
+git push origin v1.0
+
