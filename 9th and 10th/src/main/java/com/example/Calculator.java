@@ -12,4 +12,10 @@ public class Calculator {
     public int subtract(int a, int b) {
         return b - a;
     }
+    public int divide(int a, int b) {
+    if (b == 0) {
+        throw new ArithmeticException("Division by zero is not allowed.");
+    }
+    return a / b;
+}
 }
