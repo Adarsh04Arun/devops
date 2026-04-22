@@ -1,0 +1,6 @@
+git init
+-add a new file (txt file)
+-show git status
+-then git log
+-git add .
+-git commit -m "Message"
